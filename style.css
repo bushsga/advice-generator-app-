@@ -1,0 +1,92 @@
+:root {
+  --clr-light-cyan: hsl(193, 38%, 86%);
+  --clr-neon-green: hsl(150, 100%, 66%);
+  --clr-grayish-blue: hsl(217, 19%, 38%);
+  --clr-dark-grayish-blue: hsl(217, 19%, 24%);
+  --clr-darl-blue: hsl(218, 23%, 16%);
+}
+
+* {
+  /* padding: 0;
+  margin: 0;
+  box-sizing: border-box; */
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  background-color: var(--clr-darl-blue);
+  color: var(--clr-light-cyan);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  width: 600px;
+  position: relative;
+  background-color: var(--clr-dark-grayish-blue);
+  font-size: 2.5rem;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+/* .text {
+  width: 560px;
+  font-size: 28px;
+} */
+
+#ad-body {
+  font-size: 28px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+#ad-id {
+  font-size: 20px;
+  text-align: center;
+  color: var(--clr-neon-green);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+#pattern {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#dice {
+  position: absolute;
+  bottom: -25px;
+  background-color: var(--clr-neon-green);
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  left: 300px;
+}
+
+#dice:hover {
+  background-color: green;
+}
+
+@media (max-width: 600px) {
+  #dice {
+    left: 250px;
+  }
+}
+
+@media (max-width: 400px) {
+  #dice {
+    left: 150px;
+  }
+}
+
+@media (max-width: 376px) {
+  #dice {
+    left: 150px;
+  }
+}
